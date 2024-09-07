@@ -1,0 +1,156 @@
+:root{
+    --Color-primaria:#6F4E37;
+    --Color-secunadria:#F5DEB3;
+    --Color-terciaria: #556B2F;
+    --Color-cuartiaria: #8B0000;
+
+    --fuente-questrial:'Questrial' sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--Color-secunadria);
+    color:var(--Color-primaria);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu{
+    display: flex;
+    gap:30px;
+}
+
+.header_menu_link{
+    font-family: var(--fuente-questrial);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:var(--Color-cuartiaria);
+    text-decoration: none;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: justify;
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2rem;
+    font-family: var(--fuente-questrial);
+}
+
+.presentacion_contenido_texto, p{
+    font-family: var(--fuente-questrial);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.img_cafe_tostado,.img_recolector_cafe{
+    border: 6px solid var(--Color-cuartiaria);
+    border-radius: 13px; 
+    overflow: hidden;
+}
+
+.img_cafe_tostado img,.img_recolector_cafe img{
+    display: block;
+   }
+
+table,label{
+    font-size: 25px;
+}
+
+table{
+    border: 8px solid;
+    color:var(--Color-primaria);
+}
+
+.tabla_calculo_ingresos{
+    background-color:#D3D3D3;
+    font-weight: 1400;
+ }
+
+ .fila_personalizada_titulos{
+    background-color:#E5E4E2;
+ }
+
+ .fila_personalizada_kilos_recolectados{
+    background-color:#ABEBC6;
+ }
+
+ .fila_personalizada_precio_kilo, label{
+    background-color: yellow;
+    font-weight: 1400;
+ }
+
+ .fila_personalizada_total_ingresos{
+    background-color: #00BFFF;
+ }
+
+ .logo_canastoapp{
+    text-align: center;
+    padding: 20px;
+ }
+
+ .logo_canastoapp .img{
+    max-width: 100%; /* Hace que la imagen no exceda el tamaño de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+ }
+
+.links_container{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer{
+    background-color:var(--Color-terciaria);
+    padding:24px;
+    color:#FFFFFF;
+    text-align:center;
+    font-family:var(--fuente-questrial);
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion_contenido{
+        width:auto;
+    }
+
+    .logo_canastoapp .img {
+        width: 80%; /* Ajusta el ancho de la imagen a un 80% del contenedor */
+        max-width: 400px; /* Establece un tamaño máximo opcional para evitar que sea demasiado grande en pantallas pequeñas */
+
+    }
+}

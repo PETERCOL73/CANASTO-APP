@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cafetera</title>
+    <link rel="stylesheet" href="./style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header_menu">
+          <a class="header_menu_link" href="index.html">Home</a>
+          <a class="header_menu_link" href="about_1.html">Calculadora Cafetera</a>
+        </nav>
+      </header>
+
+      <main class="presentacion">
+        <section class="presentacion_contenido">
+            <h1 class="presentacion_contenido_titulo">
+             INSTRUCCIONES DE USO DE LA "CALCULADORA CAFETERA" </h1>
+            <p class="presentacion_contenido_texto">
+                1 - Ingrese en las casillas de “KILOS RECOGIDOS”, el total de kilos que recolectó por día, empezando el 
+                lunes y terminando el domingo – casillas color blanco, fondo gris-. El día que no recolectó café, lo deja en blanco; 
+                2 – Ingrese el “PRECIO KILO RECOLECTADO” – casilla color blanco, fondo amarillo -; es decir, el precio que le van a pagar
+                por cada kilo de café que recolecte; 3 – la calculadora le sumará, automáticamente, el “TOTAL KILOS RECOLECTADOS”
+                – casilla color blanco, fondo verde claro -, y por último, 4 – la calculadora cafetera le indicará a cuánto equivale su “TOTAL INGRESOS”
+                – casilla color blanco, fondo azul -; es decir, cuánto dinero ganó en la semana por la recogida de café.</p>
+        
+                <table class="tabla_calculo_ingresos">
+                    <tr class="fila_personalizada_titulos">
+                        <th><h4>DIAS</h4></th>
+                        <th><h4>KILOS RECOGIDOS</h4></th>
+                    </tr>
+                    <tr>
+                        <td>Lunes</td>
+                        <td><input type="number" id="monday" step="0.01" class="kilo-input input-text-size" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td><input type="number" id="tuesday" step="0.01" class="kilo-input input-text-size" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td><input type="number" id="wednesday" step="0.01" class="kilo-input input-text-size" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td><input type="number" id="thursday" step="0.01" class="kilo-input input-text-size" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td><input type="number" id="friday" step="0.01" class="kilo-input input-text-size" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td><input type="number" id="saturday" step="0.01" class="kilo-input input-text-size" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td><input type="number" id="sunday" step="0.01" class="kilo-input input-text-size" value="0.00"></td>
+                    </tr>
+                    <tr>
+                        <td class="fila_personalizada_kilos_recolectados">Total kilos recolectados</td>
+                        <td class="fila_personalizada_kilos_recolectados"><input type="number" id="totalKilos" class="input-text-size" readonly></td>
+                    </tr>
+                    <tr>
+                        <td class="fila_personalizada_total_ingresos">Total ingresos</td>
+                        <td class="fila_personalizada_total_ingresos"><input type="text" id="totalAmount" class="input-text-size" readonly></td>
+                    </tr>
+                    <tr class="fila_personalizada_precio_kilo">
+                        <td><label for="pricePerKilo">Precio kilo recolectado:</label></td>
+                        <td><input type="number" id="pricePerKilo" class="input-text-size" step="1" min="0" value="0" required></td>
+                    </tr>
+                </table>
+        </section>
+
+            <section class="img_recolector_cafe">
+            <img src="img/recolector_cafe.jpg" alt="Recolector de café" width="450" height="350" class="img">
+            </section>
+  
+        </main>
+
+        <section class="logo_canastoapp">
+        <img src="img/logo_canastoapp.png" alt="logo canastoapp" width="518" height="191" class="img">
+        </section>
+        
+        <footer class="footer">
+            <p class="copyright">&copy; 2024 Desarrollado por Outsourcing Globalization</p>
+            <div class="links__container">
+              <a class="link" href="https://www.linkedin.com/in/pedro-nel-aristizabal-tamayo-b585101b1/"><img src="img/Logo-Linkedin.png" width="32" height="32"></a>
+              <a class="link" href="https://github.com/PETERCOL73"><img src="img/Logo-github.png"  width="32" height="32"></a>
+            </div>
+          </footer>
+        <script src="js/funcionalidad.js"></script>
+</body>
+</html>
